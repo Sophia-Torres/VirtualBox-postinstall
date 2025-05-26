@@ -22,8 +22,9 @@ This tutorial outlines the post-install configuration insde of Oracle Virtual Bo
 
 - Setup Windows Server 2019 virtual machine as a Domain Controller
 - Setup Windows 10 virtual machine as a client connected to the domain
+- Configure internal networking, NAT, DHCP, and Active Directory
 
-<h2>Configuration Steps</h2>
+<h2>Setup Windows Server 2019 virtual machine as a Domain Controller</h2>
 - With VirtualBox click "New" to setup a new virtual machine (we will be setting up Windows Server 2019)
 
 ![image](https://github.com/user-attachments/assets/c6b65845-0530-4b42-8dc9-e575623334dc)
@@ -58,6 +59,29 @@ This tutorial outlines the post-install configuration insde of Oracle Virtual Bo
 - After installation is done log in with password
 
 <img width="1004" alt="image" src="https://github.com/user-attachments/assets/9e7990b7-170f-4404-bb14-fe21151649d5" />
+
+- Open Ethernet settings and select "Change adapter options"
+
+![image](https://github.com/user-attachments/assets/42b7abf2-ca24-4ebc-86b1-70c4b4205654)
+
+- Check the IPs of the networks and then rename them to differentiate between your host network and your virtual machine's internal network
+
+<img width="1343" alt="image" src="https://github.com/user-attachments/assets/131ddb70-51d9-4fb8-81f2-eddd92234b2f" />
+
+- Right click your Internal network and select Properties
+- Double click "Interner Protocol Version 4 (TCP/IPv4)
+- Assign the IP address to 172.16.0.1
+- Assign the subnet mask to 255.255.255.0
+- Assign the DNS server to itself, 172.16.0.1
+- Click  OK
+
+![image](https://github.com/user-attachments/assets/d454b1e3-699e-4ff9-ae9f-713130d345ac)
+
+
+- Open System Settings and click "rename this PC" and rename it to "DC"
+- Restart Windows
+
+
 
 
 
