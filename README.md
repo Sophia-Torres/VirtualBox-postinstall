@@ -4,9 +4,7 @@
 This tutorial outlines the post-install configuration of Oracle Virtual Box and the Virtual Machines for Windows Server 2019 and Windows 10 <br />
 
 
-<h2>Video Demonstration</h2>
 
-- ### [YouTube: How To Configure osTicket, post-installation](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
