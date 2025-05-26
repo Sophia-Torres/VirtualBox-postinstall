@@ -48,9 +48,17 @@ This tutorial outlines the post-install configuration insde of Oracle Virtual Bo
 - Click on Adapter 2 in the main pane
 - Mark the checkbox to Enable Network adapater
 - In the Dropdown menu next to "Attached to:" select "Internal Network"
-- Click ok at the bottom right
+- Click OK at the bottom right
 
 ![image](https://github.com/user-attachments/assets/1fc85eae-c4f6-400d-af72-ae499a472136)
+
+- Double click "DC" virtual machine to begin installing Windows Server 2019
+- When installing make sure you click one of the "Desktop" versions so that you have a GUI interface
+
+![image](https://github.com/user-attachments/assets/755f484b-7964-4f7e-a48c-6984e61774a5)
+
+
+
 
 
 
