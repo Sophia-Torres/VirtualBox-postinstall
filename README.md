@@ -80,6 +80,23 @@ This tutorial outlines the post-install configuration insde of Oracle Virtual Bo
 
 - Open System Settings and click "rename this PC" and rename it to "DC"
 - Restart Windows
+- After logging back in go into Server Manager
+- Select "Add Roles and features"
+- Installation process will begin, make sure you select "Active Directory Domain Services"
+
+![image](https://github.com/user-attachments/assets/a41b98c9-225e-4240-b271-c4917f768051)
+
+- In the Server Manager Dashboard click the yellow triangle next to the flag
+- In the pop up window select "Promote this server to domain controller" to initiate Post-deployment Configuration
+
+![image](https://github.com/user-attachments/assets/e5479897-c28e-46da-9c7a-5dd66a9b2837)
+
+- For deployment operation select "Add a new forest"
+- Use "mydomain.com" for Root domain name
+- Configure password
+- Finish installation
+
+
 
 
 
