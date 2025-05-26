@@ -20,11 +20,8 @@ This tutorial outlines the post-install configuration insde of Oracle Virtual Bo
 
 <h2>Post-Install Configuration Objectives</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Setup Windows Server 2019 virtual machine as a Domain Controller
+- Setup Windows 10 virtual machine as a client connected to the domain
 
 <h2>Configuration Steps</h2>
 - With VirtualBox click "New" to setup a new virtual machine (we will be setting up Windows Server 2019)
@@ -56,6 +53,14 @@ This tutorial outlines the post-install configuration insde of Oracle Virtual Bo
 - When installing make sure you click one of the "Desktop" versions so that you have a GUI interface
 
 ![image](https://github.com/user-attachments/assets/755f484b-7964-4f7e-a48c-6984e61774a5)
+
+- During installation set up password
+- After installation is done log in with password
+
+<img width="1004" alt="image" src="https://github.com/user-attachments/assets/9e7990b7-170f-4404-bb14-fe21151649d5" />
+
+
+
 
 
 
