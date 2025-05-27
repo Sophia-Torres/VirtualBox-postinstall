@@ -174,49 +174,50 @@ Configure the Subnet Mask to "255.255.255.0"
 
 ![image](https://github.com/user-attachments/assets/b17cff86-355e-4a6a-b153-b6e2a06209c8)
 
+<h2>Setup Windows 10 virtual machine as a client connected to the domain</h2>
+
+- Go back to Oracle VirtualBox and select New 
+- Name your virtual machine "Client 1"  
+- Select the corresponding ISO Image for Windows 10
+- Select the correct version
+- Mark the checkbox for "Skip Unattanded Installation"
+- Select Finish
+- Right Click on "Client 1" on the left pane and select Settings
+- Go to Network and under "Adapter 1" change to "Internal Network" next to "Attached to:"
+- Select OK
+
+![image](https://github.com/user-attachments/assets/048f164a-0f16-4de2-96ec-b7d39fbc1f14)
+
+- Double click "Client 1" to begin Windows 10 install
+- Select "I don't have a product key"
+- For the OS, you want to instal Windows 10 Pro
+- Select Custom Install
+- Select continue with limited set up to bypass creating a Microsoft Account
+- You can enter "User" when asked "Who's going to use this PC"
+- Finish install
+- To check internet connectivity we are going to open the Command line and enter "ipconfig"
+
+<img width="848" alt="image" src="https://github.com/user-attachments/assets/233b3984-8da3-454e-99e0-4738e3af582a" />
+- IPv4 address, subnet mask, and Default Gateway match set up
+- To check DNS we can use the command "ping" to connect to google.com to see if name resolves
+
+<img width="848" alt="image" src="https://github.com/user-attachments/assets/04626085-7d42-44a7-8a36-678242515708" />
+
+- We are going to change the PC name and connect to the domain
+- Right click the start menu and select "System"
+- Scroll down to "Rename this PC (Advanced)
+- Click the "Change" button and type "Client1" for computer name
+- In the same window select "Domain" under "Member of" and type "mydomain.com"
+- Select OK
+
+<img width="359" alt="image" src="https://github.com/user-attachments/assets/f78b7bdd-909d-4ecb-93a9-6b1006dc508a" />
+
+- Log in with a username and password that was generated with the powershell script
+- You may now logout and sign into Windows 10 using any of the users generated with the powershell script
+
+<img width="876" alt="image" src="https://github.com/user-attachments/assets/921632e7-75d8-47d6-8f5d-e26de3a15e79" />
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
