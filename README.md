@@ -95,6 +95,50 @@ This tutorial outlines the post-install configuration insde of Oracle Virtual Bo
 - Use "mydomain.com" for Root domain name
 - Configure password
 - Finish installation
+- Restart Windows
+- Login should now show username as MYDOMAIN\Administrator
+
+<img width="1064" alt="image" src="https://github.com/user-attachments/assets/36b89f78-f245-45c7-8b08-8846c8fce324" />
+
+- Create our own dedicated domain admin account to replace default account made
+- Open "Active Directory Users and Computers" window
+- Create an Organizational Unit called "_ADMINS" for the Admin account in "mydomain.com"
+- Inside the "_ADMINS" create your new user
+
+![image](https://github.com/user-attachments/assets/7719dec8-82d1-407a-a3c0-3aa412c56202)
+
+- Assign the new user to be an admin by double clicking the username
+- Select the "Member of" tab
+- Click on "Add"
+- Type in "Domain Admins" and click "Check Names"
+- Select "OK" and then select "Apply"
+- Log out and then log back in using the new admin user we created
+
+![image](https://github.com/user-attachments/assets/610a25b5-e86e-40d3-b568-212f37bb9731)
+
+- Go back to "Add Roles" and Features in the Server Manager
+- On the "Server Roles" page check mark "Remote Access"
+- On the "Role Services" page check mark "Routing"
+- Install
+- Once done go to "Tools" in the Server Manager and select "Routing and Remote Access"
+- Right click on "DC (local) in left pane and select "Configure and Enable Routing and Remote Access"
+
+![image](https://github.com/user-attachments/assets/af6c51d9-9343-4062-b586-6fe0f3d32027)
+
+- Start Setup
+- Make sure you select "Network address translation (NAT)" under the "Configuration" page
+- For the "NAT Internet Connection" page select your host's external network as the Network Interface that is going to connect you to the internet
+
+![image](https://github.com/user-attachments/assets/49cab1e4-9004-4507-8bac-1e4c4021678d)
+
+
+
+  
+
+
+
+
+
 
 
 
