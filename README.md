@@ -24,6 +24,7 @@ This tutorial outlines the post-install configuration inside of Oracle Virtual B
 - Setup Windows 10 virtual machine as a client connected to the domain
 - Configure internal networking, NAT, DHCP, and Active Directory
 - Use Powershell to automate the creation of 1,000 users in Active Directory
+- Verify client machine is configured correctly 
 
 <h2>Setup Windows Server 2019 virtual machine as a Domain Controller</h2>
 - With VirtualBox click "New" to setup a new virtual machine (we will be setting up Windows Server 2019)
@@ -46,7 +47,7 @@ This tutorial outlines the post-install configuration inside of Oracle Virtual B
 - Select the Network tab on the left hand side
 - Click on Adapter 2 in the main pane
 - Mark the checkbox to Enable Network adapater
-- In the Dropdown menu next to "Attached to:" select "Internal Network"
+- In the dropdown menu next to "Attached to:" select "Internal Network"
 - Click OK at the bottom right
 
 ![image](https://github.com/user-attachments/assets/1fc85eae-c4f6-400d-af72-ae499a472136)
@@ -190,12 +191,15 @@ Configure the Subnet Mask to "255.255.255.0"
 
 - Double click "Client 1" to begin Windows 10 install
 - Select "I don't have a product key"
-- For the OS, you want to instal Windows 10 Pro
+- For the OS, you want to install Windows 10 Pro
 - Select Custom Install
 - Select continue with limited set up to bypass creating a Microsoft Account
 - You can enter "User" when asked "Who's going to use this PC"
 - Finish install
-- To check internet connectivity we are going to open the Command line and enter "ipconfig"
+
+<h2>Verify client machine is configured correctly</h2>
+
+-  To check internet connectivity we are going to open the Command line and enter "ipconfig"
 
 <img width="848" alt="image" src="https://github.com/user-attachments/assets/233b3984-8da3-454e-99e0-4738e3af582a" />
 - IPv4 address, subnet mask, and Default Gateway match set up
