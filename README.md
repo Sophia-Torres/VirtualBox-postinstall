@@ -202,6 +202,7 @@ Configure the Subnet Mask to "255.255.255.0"
 -  To check internet connectivity we are going to open the Command line and enter "ipconfig"
 
 <img width="848" alt="image" src="https://github.com/user-attachments/assets/233b3984-8da3-454e-99e0-4738e3af582a" />
+
 - IPv4 address, subnet mask, and Default Gateway match set up
 - To check DNS we can use the command "ping" to connect to google.com to see if name resolves
 
