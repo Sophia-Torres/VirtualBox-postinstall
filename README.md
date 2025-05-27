@@ -23,6 +23,7 @@ This tutorial outlines the post-install configuration insde of Oracle Virtual Bo
 - Setup Windows Server 2019 virtual machine as a Domain Controller
 - Setup Windows 10 virtual machine as a client connected to the domain
 - Configure internal networking, NAT, DHCP, and Active Directory
+- Use Powershell to automate the creation of 1,000 users in Active Directory
 
 <h2>Setup Windows Server 2019 virtual machine as a Domain Controller</h2>
 - With VirtualBox click "New" to setup a new virtual machine (we will be setting up Windows Server 2019)
@@ -156,8 +157,28 @@ Configure the Subnet Mask to "255.255.255.0"
 - Right click again and select "refresh"
 
 
+<h2>Use Powershell to automate the creation of 1,000 users in Active Directory</h2>
 
-  
+- Save Powershell script zip folder to desktop for easy access and extract (script and curated name list is in this folder)
+- Open Windows Powershell ISE and run as administrator
+- Select "Open" in Powershell and select the script we saved and extracted
+- For lab purposes enter "Set-ExecutionPolicy Unrestricted" and enter so that script can be executed
+
+![image](https://github.com/user-attachments/assets/8c134e1f-6486-4c3b-9805-968657ecdb61)
+
+- Select "yes to all" in pop up window
+- Go to directory where curated list of names are saved to the desktop my entering "cd C:\Users\a-storres\Desktop\AD_PS-master\AD_PS-master"
+- Enter "ls" to see the name.txt
+- Click green play button to run script
+- User names from the names.txt will start generating
+
+![image](https://github.com/user-attachments/assets/b17cff86-355e-4a6a-b153-b6e2a06209c8)
+
+
+
+
+
+
 
 
 
