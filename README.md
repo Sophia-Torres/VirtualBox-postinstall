@@ -1,7 +1,7 @@
 ![image](https://github.com/user-attachments/assets/d341aa27-38e2-4010-a238-9fbbd122516b)
 
 <h1>VirtualBox - Post-Install Configuration</h1>
-This tutorial outlines the post-install configuration insde of Oracle Virtual Box for the virtual machines,Windows Server 2019 and Windows 10 <br />
+This tutorial outlines the post-install configuration inside of Oracle Virtual Box for the virtual machines, Windows Server 2019 and Windows 10 <br />
 
 
 
