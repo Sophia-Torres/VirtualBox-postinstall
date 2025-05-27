@@ -130,8 +130,30 @@ This tutorial outlines the post-install configuration insde of Oracle Virtual Bo
 - Start Setup
 - Make sure you select "Network address translation (NAT)" under the "Configuration" page
 - For the "NAT Internet Connection" page select your host's external network as the Network Interface that is going to connect you to the internet
+- Finish Setup
 
 ![image](https://github.com/user-attachments/assets/49cab1e4-9004-4507-8bac-1e4c4021678d)
+
+- Go back to Server Manager and select "Add Roles and features"
+- On the "Server Roles" page checkmark the "DHCP Server" box
+- Install
+- Once finished go back to "Tools" in Server Manager and select "DHCP"
+- Create Scope for IPv4 by right clicking "IPv4" under the "dc.mydomain.com" tab in the left pane
+- "New Scope Wizard" window will open click next to begin setup
+
+![image](https://github.com/user-attachments/assets/286d68e2-bb14-4a41-af11-5178cf3b199e)
+
+Name the Scope
+For the Start IP Address enter "172.16.0.100" 
+For the End IP Address enter "172.16.0.200"
+Configure the Subnet Mask to "255.255.255.0"
+
+![image](https://github.com/user-attachments/assets/5ac918ce-4980-4ca5-9b2e-4052c6274380)
+
+- Add the IP address "172.16.0.1" to the "Router (Default Gateway) page
+- Finish Setup
+- Right click "dc.mydomain.com" and select authorize
+- Right click again and select "refresh"
 
 
 
