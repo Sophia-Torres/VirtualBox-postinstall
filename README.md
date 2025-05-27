@@ -116,6 +116,8 @@ This tutorial outlines the post-install configuration insde of Oracle Virtual Bo
 
 ![image](https://github.com/user-attachments/assets/610a25b5-e86e-40d3-b568-212f37bb9731)
 
+<h2>Configure internal networking, NAT, DHCP, and Active Directory</h2>
+
 - Go back to "Add Roles" and Features in the Server Manager
 - On the "Server Roles" page check mark "Remote Access"
 - On the "Role Services" page check mark "Routing"
